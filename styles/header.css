@@ -72,12 +72,12 @@ h3 {
     font-size: 30px;
     color: var(--blanc);
     padding: 5px 6px;
-    border: 1px solid var(--blanc);
+    /* border: 1px solid var(--blanc);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -o-border-radius: 3px; */
     position: absolute;
     right: 30px;
     display: none;
@@ -161,7 +161,7 @@ header {
         margin-right: 0;
         width: 100%;
         height: auto;
-        background: linear-gradient(rgb(66, 38, 2), rgb(87, 50, 167));
+        background: linear-gradient(var(--primaire), var(--secondaire));
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -239,7 +239,7 @@ header {
         margin-right: 0;
         width: 100%;
         height: auto;
-        background: linear-gradient(rgb(66, 38, 2), rgb(87, 50, 167));
+        background: linear-gradient(var(--primaire), var(--secondaire));
         flex-direction: column;
         justify-content: center;
         text-align: center;
