@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- custom css link  -->
-        <link rel="stylesheet" href="./css/realisation.css" />
+        <link rel="stylesheet" href="./css/avis.css" />
 
         <!-- custom FontAwesome link -->
         <link
@@ -16,11 +16,6 @@
             crossorigin="anonymous"
         />
 
-        <!-- custom swiper limk  -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-        />
         <title>Ndiofor Construction</title>
     </head>
     <body>
@@ -33,11 +28,11 @@
             </div>
             <nav class="navbar">
                 <a href="index.html" class="nav-link">accueil</a>
-                <a href="#" class="nav-link actived">realisation</a>
+                <a href="realisation.html" class="nav-link">realisation</a>
                 <a href="architecture.html" class="nav-link">architecture</a>
                 <a href="batiment.html" class="nav-link">batiment</a>
                 <a href="travauxpublic.html" class="nav-link">travaux public</a>
-                <a href="avis.html" class="nav-link">avis clients</a>
+                <a href="#" class="nav-link actived">avis clients</a>
                 <a href="contact.html" class="nav-link">contacts</a>
             </nav>
             <div class="fas fa-bars"></div>
@@ -51,84 +46,76 @@
                 SERVICES
             </h3>
         </div>
-        <!----realisation-->
-        <section id="realisation-section">
+        <!----Avis section---->
+        <section id="avis-section">
             <div class="container">
-                <h3>
-                    Genie des Realisations de meilleurs qualites et nouvelles
-                    oeuvres inteligentes
-                </h3>
-                <div class="realisation-row">
-                    <div class="card-realisation">
-                        <img src="images/realisation1.jpg" alt="" />
-                        <h3>Aménagement exterieur d'une piscine</h3>
-                        <p>
-                            Ce chantier consiste à l’installation d’une piscine
-                            et ses différents aménagements extérieurs. Sur ce
-                            chantier nous avons réalisé l’implantation, les
-                            terrassements, les différents branchements
-                        </p>
-                        <a href="#" class="btn">DECOUVRIR</a>
+                <div class="avis-row">
+                    <div class="box gauche">
+                        <h3>Partagez un avis sur NDIOFOR CONSTRUCTION</h3>
+                        <div class="form-floating mb-3">
+                            <label for="floatingInput">Nom</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="Entrer votre Nom"
+                            />
+                        </div>
+                        <div class="form-floating">
+                            <label for="floatingPassword">Prenom</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="floatingPassword"
+                                placeholder="Prenom"
+                            />
+                        </div>
+                        <div class="form-floating comment">
+                            <label for="floatingTextarea">Comments</label>
+                            <textarea
+                                style="height: 220px"
+                                class="form-control"
+                                placeholder="Leave a comment here"
+                                id="floatingTextarea"
+                            ></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">
+                            Partager
+                        </button>
                     </div>
-                    <div class="card-realisation">
-                        <img src="images/realisation1.jpg" alt="" />
-                        <h3>Aménagement exterieur d'une piscine</h3>
-                        <p>
-                            Ce chantier consiste à l’installation d’une piscine
-                            et ses différents aménagements extérieurs. Sur ce
-                            chantier nous avons réalisé l’implantation, les
-                            terrassements, les différents branchements
-                        </p>
-                        <a href="#" class="btn">DECOUVRIR</a>
-                    </div>
-                    <div class="card-realisation">
-                        <img src="images/realisation1.jpg" alt="" />
-                        <h3>Aménagement exterieur d'une piscine</h3>
-                        <p>
-                            Ce chantier consiste à l’installation d’une piscine
-                            et ses différents aménagements extérieurs. Sur ce
-                            chantier nous avons réalisé l’implantation, les
-                            terrassements, les différents branchements
-                        </p>
-                        <a href="#" class="btn">DECOUVRIR</a>
-                    </div>
-                    <div class="card-realisation">
-                        <img src="images/realisation1.jpg" alt="" />
-                        <h3>Aménagement exterieur d'une piscine</h3>
-                        <p>
-                            Ce chantier consiste à l’installation d’une piscine
-                            et ses différents aménagements extérieurs. Sur ce
-                            chantier nous avons réalisé l’implantation, les
-                            terrassements, les différents branchements
-                        </p>
-                        <a href="#" class="btn">DECOUVRIR</a>
-                    </div>
-                    <div class="card-realisation">
-                        <img src="images/realisation1.jpg" alt="" />
-                        <h3>Aménagement exterieur d'une piscine</h3>
-                        <p>
-                            Ce chantier consiste à l’installation d’une piscine
-                            et ses différents aménagements extérieurs. Sur ce
-                            chantier nous avons réalisé l’implantation, les
-                            terrassements, les différents branchements
-                        </p>
-                        <a href="#" class="btn">DECOUVRIR</a>
-                    </div>
-                    <div class="card-realisation">
-                        <img src="images/realisation1.jpg" alt="" />
-                        <h3>Aménagement exterieur d'une piscine</h3>
-                        <p>
-                            Ce chantier consiste à l’installation d’une piscine
-                            et ses différents aménagements extérieurs. Sur ce
-                            chantier nous avons réalisé l’implantation, les
-                            terrassements, les différents branchements
-                        </p>
-                        <a href="#" class="btn">DECOUVRIR</a>
+                    <div class="box droite">
+                        <div class="box-comment">
+                            <h4>BIER Christophe</h4>
+                            <p>Du bon boulot, rien à redire, je recommande !</p>
+                        </div>
+
+                        <div class="box-comment">
+                            <h4>ROGER</h4>
+                            <p>
+                                Bravo à Stagno pour leur efficacité ! Je
+                                recommande
+                            </p>
+                        </div>
+
+                        <div class="box-comment">
+                            <h4>MÉLISSA P.</h4>
+                            <p>Rien à dire, super équipe, super boulot !</p>
+                        </div>
+
+                        <div class="box-comment">
+                            <h4>FRANCIS Leibfried</h4>
+                            <p>
+                                Au top ! L'entreprise stagno s’est occupé de
+                                réaliser entièrement tout le terrassement de
+                                notre maison et par la site l’installation de la
+                                piscine. Je recommande sans hésiter !
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!----end realisation-->
+        <!----end Avis section---->
         <!---Footer section-->
         <section id="footer-section">
             <div class="container">

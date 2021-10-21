@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// variables
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body {
+    background: #fefefe;
+}
+.btn {
+    margin-top: 1rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: 0.2rem solid $blanc;
+    background: $primaire;
+    color: $blanc;
+    cursor: pointer;
+}
+.container {
+    padding: 5rem 9%;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primaire;
+    text-align: center;
+}
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $secondaire;
+}
+h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-style: italic;
+    color: $grise;
+    text-align: center;
+}
+
+// header start
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background: $blanc;
+    z-index: 1000;
+    padding: 0.5rem 7%;
+    box-shadow: $box-shadow;
+    align-items: center;
+    .logo {
+        width: 7rem;
+        height: 5rem;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .navbar {
+        .nav-link {
+            font-size: $taille-texte;
+            padding: 0.5rem 1.5rem;
+            color: $primaire;
+            text-transform: capitalize;
+            &:hover {
+                color: $secondaire;
+            }
+            &.actived {
+                background: $secondaire;
+                color: $blanc;
+                border-radius: 0.5rem;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
+            }
+        }
+    }
+    .fas {
+        font-size: 2.5rem;
+        padding: 0.7rem 1rem;
+        color: $blanc;
+        background: $primaire;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        display: none;
+    }
+}
+// fondu start
+.fondue {
+    width: 100%;
+    height: 10rem;
+    background: $blanc;
+    position: relative;
+    box-shadow: 0 90px 90px 90px #fff;
+}
+// fondu end
+
+// Banniere start
+.banniere {
+    height: 50rem;
+    // margin-top: 5rem;
+    padding: 0 7%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(89, 150, 73, 0.5)),
+        url(../images/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+    h1 {
+        font-size: 6.5rem;
+        color: $secondaire;
+        text-shadow: 2px 3px 6px $blanc;
+        z-index: 100;
+    }
+    h3 {
+        font-size: 3rem;
+        color: $blanc;
+        text-shadow: 2px 1px 3px $secondaire;
+    }
+}
+// Banniere end
+
+// contact-section start
+#contact-section {
+    .container {
+        margin-top: 5rem;
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            .box {
+                border-radius: 1rem;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+                box-shadow: $box-shadow;
+            }
+            .gauche {
+                flex: 1 1 40rem;
+                width: 100%;
+                padding: 0 4rem;
+                background: rgba(89, 150, 73, 0.5);
+                h4 {
+                    text-align: center;
+                    margin: 3rem 0;
+                    font-size: 2.2rem;
+                    color: $secondaire;
+                }
+                .input-group {
+                    display: flex;
+                    width: 100%;
+                }
+                .input-group-text {
+                    width: 5rem;
+                    height: 5rem;
+                    margin: 0.7rem 0;
+                    display: block;
+                    text-align: center;
+                    line-height: 5rem;
+                    background: $primaire;
+                    border-radius: 0.5rem 0 0 0.5rem;
+                    -webkit-border-radius: 0.5rem 0 0 0.5rem;
+                    -moz-border-radius: 0.5rem 0 0 0.5rem;
+                    -ms-border-radius: 0.5rem 0 0 0.5rem;
+                    -o-border-radius: 0.5rem 0 0 0.5rem;
+                    i {
+                        padding: 0 1rem;
+                        font-size: 2.2rem;
+                        color: $blanc;
+                    }
+                }
+                input {
+                    width: 90%;
+                    height: 5rem;
+                    padding: 0 1.2rem;
+                    margin: 0.7rem 0;
+                    font-size: $taille-texte;
+                    border-radius: 0 0.5rem 0.5rem 0;
+                    -webkit-border-radius: 0 0.5rem 0.5rem 0;
+                    -moz-border-radius: 0 0.5rem 0.5rem 0;
+                    -ms-border-radius: 0 0.5rem 0.5rem 0;
+                    -o-border-radius: 0 0.5rem 0.5rem 0;
+                    outline: none;
+                    border: none;
+                    background: #ccc;
+                }
+                textarea {
+                    width: 90%;
+                    height: 20rem;
+                    padding: 1.2rem;
+                    margin: 0.7rem 0;
+                    font-size: $taille-texte;
+                    border-radius: 0 0.5rem 0.5rem 0;
+                    -webkit-border-radius: 0 0.5rem 0.5rem 0;
+                    -moz-border-radius: 0 0.5rem 0.5rem 0;
+                    -ms-border-radius: 0 0.5rem 0.5rem 0;
+                    -o-border-radius: 0 0.5rem 0.5rem 0;
+                    outline: none;
+                    border: none;
+                    background: #ccc;
+                }
+                .btn {
+                    margin-bottom: 1.5rem;
+                    margin-top: 2rem;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    &:hover {
+                        border: 0.2rem solid $primaire;
+                        background: $blanc;
+                        color: $primaire;
+                    }
+                }
+            }
+            .droite {
+                flex: 1 1 20rem;
+                width: 100%;
+                font-size: $taille-texte;
+                .profile {
+                    width: 100%;
+                    text-align: center;
+                    img {
+                        width: 70%;
+                        margin-bottom: 0.7rem;
+                        border: 0.5rem solid $blanc;
+                        box-shadow: $box-shadow;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0.5rem;
+                    color: $blanc;
+                    text-align: center;
+                }
+                .adress {
+                    padding: 1.2rem;
+                    margin-bottom: 0.6rem;
+                    border: 0.5rem solid $blanc;
+                    background: $secondaire;
+                }
+                #map {
+                    border: 0.5rem solid $blanc;
+                    iframe {
+                        outline: none;
+                        border: none;
+                        width: 100%;
+                        border-radius: 0.6rem;
+                        -webkit-border-radius: 0.6rem;
+                        -moz-border-radius: 0.6rem;
+                        -ms-border-radius: 0.6rem;
+                        -o-border-radius: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// contact-section end
+
+// footer-section start
+#footer-section {
+    background: $secondaire;
+    .container {
+        color: $blanc;
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            .card-footer {
+                flex: 1 1 40rem;
+                h2 {
+                    color: $primaire;
+                }
+                p {
+                    margin: 3rem 0;
+                    font-size: $taille-texte;
+                    font-style: italic;
+                    span {
+                        color: $primaire;
+                    }
+                }
+            }
+        }
+        .social-media {
+            font-size: 4rem;
+            margin: 0.5rem 0;
+            text-align: center;
+            a {
+                color: $blanc;
+                padding: 0 0.2rem;
+                .fa-facebook-square {
+                    color: #3b5998;
+                }
+                .fa-youtube-square {
+                    color: #c4302b;
+                }
+                .fa-instagram-square {
+                    color: transparent;
+                    background: -webkit-radial-gradient(
+                        30% 107%,
+                        circle,
+                        #fdf497 0%,
+                        #fdf497 5%,
+                        #fd5949 45%,
+                        #d6249f 60%,
+                        #285aeb 90%
+                    );
+                    background: -o-radial-gradient(
+                        30% 107%,
+                        circle,
+                        #fdf497 0%,
+                        #fdf497 5%,
+                        #fd5949 45%,
+                        #d6249f 60%,
+                        #285aeb 90%
+                    );
+                    background: radial-gradient(
+                        circle at 30% 107%,
+                        #fdf497 0%,
+                        #fdf497 5%,
+                        #fd5949 45%,
+                        #d6249f 60%,
+                        #285aeb 90%
+                    );
+                    background: -webkit-radial-gradient(
+                        circle at 30% 107%,
+                        #fdf497 0%,
+                        #fdf497 5%,
+                        #fd5949 45%,
+                        #d6249f 60%,
+                        #285aeb 90%
+                    );
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+                .fa-linkedin {
+                    color: #0e76a8;
+                }
+                &:hover i {
+                    transform: scale(1.5);
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                }
+            }
+        }
+    }
+    .footer {
+        padding: 1rem 9%;
+        text-align: center;
+        background: #000;
+        p {
+            // display: flex;
+            // flex-wrap: wrap;
+            padding: 1rem 0;
+            color: $blanc;
+            font-size: 1.5rem;
+            a {
+                color: $grise;
+            }
+        }
+    }
+}
+// footer-section end
+
+// media queries
+@media (max-width: 1085px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width: 956px) {
+    header {
+        .navbar {
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            background: $primaire;
+            width: 30rem;
+            height: calc(100vh - 9.5rem);
+            transition: 0.5s ease-in-out;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            z-index: 100000;
+            &.active {
+                right: 0;
+            }
+            .nav-link {
+                display: block;
+                color: $blanc;
+                margin: 2.5rem;
+                padding: 0.5rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        .fas {
+            display: block;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 4rem 6%;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        padding: 4rem 5%;
+    }
+    header {
+        .navbar {
+            width: 100%;
+            .nav-link {
+                margin: 3.5rem;
+                padding: 1rem;
+                font-size: 3rem;
+            }
+        }
+    }
+    .banniere {
+        h1 {
+            font-size: 5rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+    #footer-section {
+        .footer {
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

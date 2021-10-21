@@ -4,85 +4,63 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ndiofoor Construction</title>
-        <link rel="stylesheet" href="./styles/architecture.css" />
-        <link rel="stylesheet" href="./styles/header.css" />
 
-        <!--FontAwesome-->
+        <!-- custom css link  -->
+        <link rel="stylesheet" href="./css/architecture.css" />
+
+        <!-- custom FontAwesome link -->
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
             integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
             crossorigin="anonymous"
         />
-        <script defer src="./javascript/index.js"></script>
+
+        <!-- custom swiper limk  -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <title>Ndiofor Construction</title>
     </head>
     <body>
-        <!-- header -->
-        <div id="headermenu">
+        <!-- header section starts -->
+        <header>
+            <div class="logo">
+                <a href="index.html"
+                    ><img src="./images/logo1.png" alt="logo"
+                /></a>
+            </div>
             <nav class="navbar">
-                <img class="logo" src="images/logo1.png" alt="" />
-                <!-- <h3 class="logo">NDIOFOR</h3> -->
-                <div class="humberger">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-links">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./realisation.html" class="nav-link"
-                            >Realisation</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a href="./architecture.html" class="nav-link active"
-                            >Architecture</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a href="./batiment.html" class="nav-link">Batiment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./travauxPublic.html" class="nav-link"
-                            >Tavaux Public</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a href="./avisclients.html" class="nav-link"
-                            >Avis Clients</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a href="./contact.html" class="nav-link">Contacts</a>
-                    </li>
-                </ul>
+                <a href="index.html" class="nav-link">accueil</a>
+                <a href="realisation.html" class="nav-link">realisation</a>
+                <a href="#" class="nav-link actived">architecture</a>
+                <a href="batiment.html" class="nav-link">batiment</a>
+                <a href="travauxpublic.html" class="nav-link">travaux public</a>
+                <a href="avis.html" class="nav-link">avis clients</a>
+                <a href="contact.html" class="nav-link">contacts</a>
             </nav>
-            <!---end Navbar-->
-            <header>
-                <div class="company-name">
-                    <p>
-                        <span class="title">NDIOFOR <br />CONSTRUCTION</span>
-                    </p>
-                    <div class="line"></div>
-                    <h3>
-                        Etude - Aménagement - Réalisation et Assistance
-                        Technique BTP et SERVICES
-                    </h3>
-                </div>
-            </header>
+            <div class="fas fa-bars"></div>
+        </header>
+        <!-- header section end -->
+        <div class="fondue"></div>
+        <div class="banniere">
+            <h1>NDIOFOR <br />CONSTRUCTION</h1>
+            <h3>
+                Etude - Aménagement - Réalisation et Assistance Technique BTP et
+                SERVICES
+            </h3>
         </div>
-        <!---Title presentation-->
-        <!-- end header -->
+
         <!---content-->
-        <section id="content">
+        <section id="architecture-content">
             <div class="container">
                 <h3>
                     Decouvrer les meilleurs Architectures avec les normes de
                     securites exiges
                 </h3>
-                <div class="row">
-                    <div class="card mb-3 gauche">
+                <div class="architecture-row">
+                    <div class="card-gauche">
                         <img
                             src="images/architeque1.JPG"
                             class="card-img-top"
@@ -94,7 +72,7 @@
                             alt="..."
                         />
                         <img
-                            src="asserts/architect1.jpg"
+                            src="images/slide1.jpg"
                             class="card-img-top"
                             alt="..."
                         />
@@ -110,7 +88,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card mb-3 droite">
+                    <div class="card-droite">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">
@@ -123,22 +101,22 @@
                             </p>
                         </div>
                         <img
-                            src="asserts/architect2.jpg"
+                            src="images/slide1.jpg"
                             class="card-img-top"
                             alt="..."
                         />
                         <img
-                            src="asserts/architecture.jpg"
+                            src="images/slide1.jpg"
                             class="card-img-top"
                             alt="..."
                         />
                         <img
-                            src="asserts/architect3.jpg"
+                            src="images/slide1.jpg"
                             class="card-img-top"
                             alt="..."
                         />
                         <img
-                            src="asserts/architect4.jpg"
+                            src="images/slide1.jpg"
                             class="card-img-top"
                             alt="..."
                         />
@@ -150,8 +128,8 @@
         <!---Footer section-->
         <section id="footer-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
+                <div class="footer-row">
+                    <div class="card-footer">
                         <h2>NDIOFOR CONSTRUCTION - ENTREPRISE BTP</h2>
                         <p>
                             NDIOFOR CONSTRUCTION BTP c’est avant tout une
@@ -163,7 +141,7 @@
                             l’extension, la réhabilitation ...
                         </p>
                     </div>
-                    <div class="col-4">
+                    <div class="card-footer">
                         <h2>INFORMATIONS</h2>
                         <p>
                             <span class="title">NDIOFOR CONSTRUCTION</span>
@@ -182,7 +160,7 @@
                             >
                         </p>
                     </div>
-                    <div class="col-4">
+                    <div class="card-footer">
                         <h2>UN CHANTIER AU SENEGAL ?</h2>
                         <p>
                             Notre équipe se charge de prendre avec vous toutes
@@ -203,5 +181,8 @@
             </div>
         </section>
         <!---end Footer section-->
+
+        <!-- custom js link  -->
+        <script src="./js/main.js"></script>
     </body>
 </html>
